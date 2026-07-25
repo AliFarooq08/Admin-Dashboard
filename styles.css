@@ -14,9 +14,9 @@ html {
 #container {
     height: 100vh;
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: minmax(150px, calc(max-content + 5px)) 1fr;
+    display: inline-grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
         "sidebar header"
         "sidebar main-content";
@@ -63,10 +63,12 @@ li {
     margin-top: 32px;
     justify-content: center;
     align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 .website, .main-nav, .help-nav { 
     margin-bottom: 16px;
-    width: max(250px, 12.5vw);
+    width: calc(max-content + 32px);
 }
 .main-nav {
     margin-bottom: 32px;
@@ -135,6 +137,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: white;
+    padding-bottom: 16px;
 }
 .header-button-container {
     gap: 8px;
@@ -243,11 +246,11 @@ header {
     padding-top: 8px
 }
 .small-bold {
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-left: 4px;
 }
 .announcement-description {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     color: gray;
     margin-left: 4px;
 }
