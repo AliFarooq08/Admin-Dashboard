@@ -68,7 +68,6 @@ li {
 }
 .website, .main-nav, .help-nav { 
     margin-bottom: 16px;
-    width: calc(max-content + 32px);
 }
 .main-nav {
     margin-bottom: 32px;
@@ -168,7 +167,7 @@ header {
     grid-area: main-content;
     background-color: var(--gray-main-content);
     display: grid;
-    grid-template: "project announcements" 1fr "project trending" 1fr / 4fr 1fr;
+    grid-template: "project announcements" 1fr "project trending" 1fr / 1fr auto;
 }
 #projects {
     grid-area: project;
@@ -220,6 +219,7 @@ header {
     height: 100%;
     margin-right: 16px;
     align-items: center;
+    padding-right: 16px;
 }
 .all-announcements {
     background-color: white;
@@ -263,6 +263,7 @@ header {
     margin-right: 16px;
     margin-bottom: 8px;
     align-items: center;
+    padding-right: 16px;
 }
 .trending-users {
     display: grid;
