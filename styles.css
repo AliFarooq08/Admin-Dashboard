@@ -145,6 +145,7 @@ header {
     border-radius: 24px;
     font-size: 0.75rem;
     font-weight: bold;
+    margin-bottom: 8px;
 }
 .header-button:hover {
     cursor: pointer;
@@ -264,7 +265,7 @@ header {
     border: 20px solid white;
     border-radius: 8px;
     width: 200px;
-    
+    box-shadow: 2px 2px 2px 2px lightgray; 
 }
 .trending-icon {
     width: 32px;
